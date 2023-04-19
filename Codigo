@@ -1,0 +1,26 @@
+public class Tema9 {
+    public static void main(String[] args) {
+        cliente cliente = new cliente();
+        cliente.edad = 20;
+        cliente.nombre = "ROBERTO";
+        cliente.telefono = 900202122;
+        cliente.credito = 1000;
+        System.out.println(cliente.edad);
+        System.out.println(cliente.nombre);
+        System.out.println(cliente.telefono);
+        System.out.println(cliente.credito);
+
+    }
+    static class persona {
+        int edad;
+        String nombre;
+        int telefono;
+    }
+    static class cliente extends persona {
+        int credito;
+    }
+
+    static class trabajador extends persona {
+        int  salario;
+    }
+}
